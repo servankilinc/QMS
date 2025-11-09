@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36121.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.API", "QMS.API\QMS.API.csproj", "{A0250318-6930-4017-9EA2-EBF82F3C3157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.VirtualTerminal", "QMS.VirtualTerminal\QMS.VirtualTerminal.csproj", "{9A7668D3-4579-4323-9618-0B5F2E95CBFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.QueueCommunication", "QMS.QueueCommunication\QMS.QueueCommunication.csproj", "{D17F5583-9B72-490F-8752-78EFDB930F16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.Kiosk", "QMS.Kiosk\QMS.Kiosk.csproj", "{4BF9D3E8-056D-4B08-A1FF-930EF524B2D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.Business", "Src\QMS.Business\QMS.Business.csproj", "{8B4F23F1-8386-49CD-A3AA-FD20A09C3C91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QMS.Model", "Src\QMS.Model\QMS.Model.csproj", "{8168DD7D-F8FB-4915-B1C1-87473510F35A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0250318-6930-4017-9EA2-EBF82F3C3157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0250318-6930-4017-9EA2-EBF82F3C3157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0250318-6930-4017-9EA2-EBF82F3C3157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0250318-6930-4017-9EA2-EBF82F3C3157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A7668D3-4579-4323-9618-0B5F2E95CBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A7668D3-4579-4323-9618-0B5F2E95CBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A7668D3-4579-4323-9618-0B5F2E95CBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A7668D3-4579-4323-9618-0B5F2E95CBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17F5583-9B72-490F-8752-78EFDB930F16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17F5583-9B72-490F-8752-78EFDB930F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17F5583-9B72-490F-8752-78EFDB930F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17F5583-9B72-490F-8752-78EFDB930F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF9D3E8-056D-4B08-A1FF-930EF524B2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF9D3E8-056D-4B08-A1FF-930EF524B2D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF9D3E8-056D-4B08-A1FF-930EF524B2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF9D3E8-056D-4B08-A1FF-930EF524B2D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4F23F1-8386-49CD-A3AA-FD20A09C3C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4F23F1-8386-49CD-A3AA-FD20A09C3C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4F23F1-8386-49CD-A3AA-FD20A09C3C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4F23F1-8386-49CD-A3AA-FD20A09C3C91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8168DD7D-F8FB-4915-B1C1-87473510F35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8168DD7D-F8FB-4915-B1C1-87473510F35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8168DD7D-F8FB-4915-B1C1-87473510F35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8168DD7D-F8FB-4915-B1C1-87473510F35A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B4F23F1-8386-49CD-A3AA-FD20A09C3C91} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8168DD7D-F8FB-4915-B1C1-87473510F35A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F2354E8-B4A7-428D-A353-C3C530DD7ABD}
+	EndGlobalSection
+EndGlobal

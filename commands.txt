@@ -1,0 +1,30 @@
+rabbitmq-plugins enable rabbitmq_management  (paneli aktif eder)
+
+net start RabbitMQ 
+
+rabbitmqctl status
+
+// cookie bilgileri dosya okuma yolu
+setx RABBITMQ_BASE "C:\RabbitMQ"
+
+// YENI KULLANICI EKLEME
+rabbitmqctl add_user system 123456
+rabbitmqctl set_user_tags system administrator
+rabbitmqctl set_permissions -p / system ".*" ".*" ".*"
+
+
+// KULLANICI LISTESI
+rabbitmqctl list_users
+
+// şifre yenileme
+rabbitmqctl change_password system 147123
+
+
+
+            //await _publishEndpoint.Publish(new NotificationMessage
+            //{
+            //    TCKNO = context.Message.TCKNO,
+            //    Message = "Kayıtlı kullanıcı bulunamadı. Lütfen önce kayıt olunuz.",
+            //    CorrelationId = context.CorrelationId,
+            //    RequestedAt = DateTime.Now
+            //});

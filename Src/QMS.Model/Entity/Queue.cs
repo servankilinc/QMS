@@ -1,0 +1,16 @@
+﻿using System.Runtime.InteropServices;
+
+namespace QMS.Model.Entity;
+
+public class Queue
+{
+    public Guid Id { get; set; }
+    public Guid ClientId { get; set; }
+    public int LastMovementTypeId { get; set; }
+    public DateTime Date { get; set; }
+
+    public virtual Client Client { get; set; } = null!;
+    public virtual QueueMovementType LastMovementType { get; set; } = null!;
+    public virtual ICollection<QueueMovement> QueueMovements { get; set; } = null!;
+}
+
