@@ -8,4 +8,5 @@ public class QueueType
 
     public virtual ICollection<Queue>? Queues { get; set; }
     public virtual ICollection<BranchQueueTypeMap>? BranchQueueTypeMaps { get; set; }
+    public virtual ICollection<KioskQueueTypeMap>? KioskQueueTypeMaps { get; set; }
 }
