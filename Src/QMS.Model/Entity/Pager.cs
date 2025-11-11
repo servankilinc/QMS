@@ -8,6 +8,7 @@ public class Pager
     /// </summary>
     public Guid BranchId { get; set; }
     public int PagerTypeId { get; set; }
+    public Guid ConverterId { get; set; }
     public string Name { get; set; } = null!;
     // çağrı cihazı iletişim bilgileri
     /// <summary>
@@ -18,6 +19,7 @@ public class Pager
 
     public virtual Branch Branch { get; set; } = null!;
     public virtual PagerType PagerType { get; set; } = null!;
+    public virtual Converter Converter { get; set; } = null!;
     public virtual ICollection<QueueMovement>? QueueMovements { get; set; }
     public virtual ICollection<BankoPagerMap>? BankoPagerMaps { get; set; }
 }
