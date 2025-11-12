@@ -17,6 +17,7 @@ public class Pager
     public int DeviceIndex { get; set; }
     public string? DeviceIp { get; set; }
 
+    public int testField { get => field; set => field = value; }
     public virtual Branch Branch { get; set; } = null!;
     public virtual PagerType PagerType { get; set; } = null!;
     public virtual Converter Converter { get; set; } = null!;

@@ -8,16 +8,7 @@ public class QueueMovement
     public Guid UnitId { get; set; }
     public int MovementTypeId { get; set; }
     public int StatusTypeId { get; set; }
-
-    #region Transfer Movement Type Props
-    public int? TransferTypeId { get; set; }
-    #endregion
-
-    #region Call Movement Type Props
-    public int? CallTypeId { get; set; }
-    public Guid? PagerId { get; set; }
-    public int? Number { get; set; } 
-    #endregion
+    public Guid TransferId { get; set; }
 
     public DateTime Date { get; set; }
     
@@ -36,7 +27,5 @@ public class QueueMovement
     public virtual QueueMovementType MovementType { get; set; } = null!;
     public virtual Unit Unit { get; set; } = null!;
     public virtual QueueMovementStatusType StatusType { get; set; } = null!;
-    public virtual TransferType? TransferType { get; set; }
-    public virtual CallType? CallType { get; set; }
-    public virtual Pager? Pager { get; set; }
+    public virtual Transfer? Transfer { get; set; }
 }

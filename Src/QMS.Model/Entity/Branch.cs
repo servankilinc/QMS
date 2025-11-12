@@ -14,4 +14,6 @@ public class Branch
     public virtual ICollection<Banko>? Bankos { get; set; }
     public virtual ICollection<Display>? Displays { get; set; }
     public virtual ICollection<BranchParameter>? BranchParameters { get; set; }
+    public virtual ICollection<ControlCard>? ControlCards { get; set; }
+    public virtual ICollection<Licence>? Licences { get; set; }
 }
