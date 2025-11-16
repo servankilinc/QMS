@@ -1,6 +1,6 @@
 ﻿namespace QMS.Model.Entity;
 
-public class UnitQueueTypeSettings
+public class UnitQueueTypeSetting
 {
     public Guid Id { get; set; }
     /// <summary>
@@ -8,13 +8,14 @@ public class UnitQueueTypeSettings
     /// </summary>
     public Guid BranchId { get; set; }
     public Guid UnitId { get; set; }
-    public Guid QueueTypeId { get; set; }
+    public int QueueTypeId { get; set; }
+
     public bool UseTheseSettings { get; set; }
-    /// <summary>
-    /// False durumunda gün sonu gelince sıfırlar
-    /// </summary>
-    public bool ResetNumberOnlyMaxCount { get; set; }
+    public bool ResetNumberEndOfDay { get; set; }
     public int Priority { get; set; }
+    public bool OnlineAppointment { get; set; }
+    public int OnlineAppointmentFrequency { get; set; }
+    public int OnlineAppointmentAfterDay { get; set; }
     public string? NumberLetter { get; set; }
     public int StartNumber { get; set; }
     public int EndNumber { get; set; }
@@ -24,8 +25,3 @@ public class UnitQueueTypeSettings
     public virtual Unit Unit { get; set; } = null!;
     public virtual QueueType QueueType { get; set; } = null!;
 }
-
-
-// kiosk - branch
-// kiosk - unit (n-n)
-// kiosk - queuetype (n-n) 

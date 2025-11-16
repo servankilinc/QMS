@@ -7,6 +7,7 @@ public class TerminalUser
     public string Name { get; set; } = null!;
 
     public virtual Branch Branch { get; set; } = null!;
-    public virtual ICollection<TerminalUserUnitMap>? TerminalUserUnitMaps { get; set; }
+    public virtual ICollection<QueueMovement>? QueueMovements { get; set; }
     public virtual ICollection<TerminalUserBankoMap>? BankoTerminalUserMaps { get; set; }
+    public virtual ICollection<TerminalUserMovement>? TerminalUserMovements { get; set; }
 }

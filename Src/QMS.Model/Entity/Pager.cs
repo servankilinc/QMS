@@ -14,13 +14,12 @@ public class Pager
     /// <summary>
     /// seri haberleşme için cihaz indexi (COM1=1, COM2=2,...)
     /// </summary>
-    public int DeviceIndex { get; set; }
+    public int? DeviceIndex { get; set; }
     public string? DeviceIp { get; set; }
 
-    public int testField { get => field; set => field = value; }
     public virtual Branch Branch { get; set; } = null!;
     public virtual PagerType PagerType { get; set; } = null!;
     public virtual Converter Converter { get; set; } = null!;
-    public virtual ICollection<QueueMovement>? QueueMovements { get; set; }
+    public virtual ICollection<Transfer>? Transfers { get; set; }
     public virtual ICollection<BankoPagerMap>? BankoPagerMaps { get; set; }
 }

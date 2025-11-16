@@ -1,0 +1,23 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>Home</PageTitle>
+
+<h1>
+    Hello, world!
+    <br/>
+    <br/>
+    @(GlobalState.QueueList != null ? $"There are {GlobalState.QueueList.Count} items in the queue." : "There is No Item!")
+</h1>
+
+<button class="btn btn-success" @onclick="InsertNewQueue" >Insert Test</button>
+
+@if (GlobalState.QueueList != null)
+{
+    <ul>
+        @foreach (var item in GlobalState.QueueList)
+        {
+            <li>@item</li>
+        }
+    </ul>
+}

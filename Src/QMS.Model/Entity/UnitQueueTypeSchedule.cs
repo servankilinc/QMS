@@ -1,6 +1,9 @@
 ﻿namespace QMS.Model.Entity;
 
-public class UnitQueueTypeSequence
+/// <summary>
+/// birimlerin sıra tipleri ile belirli zaman aralıklarında sıra verebilme ayarları
+/// </summary>
+public class UnitQueueTypeSchedule
 {
     public Guid Id { get; set; }
     /// <summary>
@@ -8,8 +11,9 @@ public class UnitQueueTypeSequence
     /// </summary>
     public Guid BranchId { get; set; }
     public Guid UnitId { get; set; }
-    public Guid QueueTypeId { get; set; }
-    public int WeekDayIndex { get; set; }
+    public int QueueTypeId { get; set; }
+
+    public DayOfWeek DayOfWeek { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
     public int StartNumber { get; set; }
@@ -20,10 +24,4 @@ public class UnitQueueTypeSequence
     public virtual Branch Branch { get; set; } = null!;
     public virtual Unit Unit { get; set; } = null!;
     public virtual QueueType QueueType { get; set; } = null!;
-    public virtual Weekday Weekday { get; set; } = null!;
 }
-
-
-// kiosk - branch
-// kiosk - unit (n-n)
-// kiosk - queuetype (n-n) 

@@ -1,6 +1,8 @@
 ﻿namespace QMS.Model.Entity;
-
-public class UnitSequence
+/// <summary>
+/// birimlerin sıra tipleri ile çalışma saatleri (personel, çağırabilmesi vs. süreçlerinde)
+/// </summary>
+public class UnitSchedule
 {
     public Guid Id { get; set; }
     /// <summary>
@@ -8,8 +10,8 @@ public class UnitSequence
     /// </summary>
     public Guid BranchId { get; set; }
     public Guid UnitId { get; set; }
-    public Guid QueueTypeId { get; set; }
-    public int WeekDayIndex { get; set; }
+    public int QueueTypeId { get; set; }
+    public DayOfWeek DayOfWeek { get; set; }
     public TimeSpan StartTime { get; set; }
     public TimeSpan EndTime { get; set; }
     public bool IsActive { get; set; }
@@ -17,10 +19,4 @@ public class UnitSequence
     public virtual Branch Branch { get; set; } = null!;
     public virtual Unit Unit { get; set; } = null!;
     public virtual QueueType QueueType { get; set; } = null!;
-    public virtual Weekday Weekday { get; set; } = null!;
 }
-
-
-// kiosk - branch
-// kiosk - unit (n-n)
-// kiosk - queuetype (n-n) 

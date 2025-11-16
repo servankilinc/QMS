@@ -3,7 +3,7 @@
 public class KioskQueueTypeMap
 {
     public Guid KioskId { get; set; }
-    public Guid QueueTypeId { get; set; }
+    public int QueueTypeId { get; set; }
     public virtual Kiosk Kiosk { get; set; } = null!;
     public virtual QueueType QueueType { get; set; } = null!;
 }

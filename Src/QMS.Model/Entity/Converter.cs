@@ -10,6 +10,8 @@ public class Converter
 
     public virtual Branch Branch { get; set; } = null!;
     public virtual BoardBrand BoradBrand { get; set; } = null!;
-    public virtual ConverterType ConverterType { get; set; } = null!;    
-    public virtual ICollection<Pager>? Pagers { get; set; }   
+    public virtual ConverterType ConverterType { get; set; } = null!;
+    public virtual TcpConverter? TcpConverter { get; set; } = null!;
+    public virtual SerialConverter? SerialConverter { get; set; } = null!;
+    public virtual ICollection<Pager>? Pagers { get; set; }
 }

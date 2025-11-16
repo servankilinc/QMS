@@ -6,4 +6,5 @@ public class QueueMovementType
     public string Name { get; set; } = null!;
 
     public virtual ICollection<QueueMovement>? QueueMovements { get; set; }
+    public virtual ICollection<Queue>? QueueListOnLastThisMovement { get; set; }
 }

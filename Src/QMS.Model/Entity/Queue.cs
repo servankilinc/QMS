@@ -5,7 +5,7 @@ namespace QMS.Model.Entity;
 public class Queue
 {
     public Guid Id { get; set; }
-    public Guid QueueTypeId { get; set; }
+    public int QueueTypeId { get; set; }
     public Guid BranchId { get; set; }
     public Guid ClientId { get; set; }
     public int LastMovementTypeId { get; set; }
